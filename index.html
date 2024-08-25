@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educator Reputation NFT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Educator Reputation NFT</h1>
+    <div id="status"></div>
+    
+    <div>
+        <h2>Mint a New NFT</h2>
+        <input type="text" id="mintAddress" placeholder="Recipient Address">
+        <input type="text" id="mintURI" placeholder="Metadata URI">
+        <button onclick="mintNFT()">Mint NFT</button>
+    </div>
+
+    <div>
+        <h2>Update Token URI</h2>
+        <input type="text" id="updateTokenId" placeholder="Token ID">
+        <input type="text" id="updateURI" placeholder="New Metadata URI">
+        <button onclick="updateTokenURI()">Update URI</button>
+    </div>
+
+    <div>
+        <h2>Get Token URI</h2>
+        <input type="text" id="getTokenId" placeholder="Token ID">
+        <button onclick="getTokenURI()">Get URI</button>
+        <p id="tokenURIResult"></p>
+    </div>
+
+    <div>
+        <h2>Get Owned Tokens</h2>
+        <input type="text" id="ownerAddress" placeholder="Owner Address">
+        <button onclick="getOwnedTokens()">Get Owned Tokens</button>
+        <p id="ownedTokensResult"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
